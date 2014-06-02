@@ -560,6 +560,7 @@ jQuery( function() {
     } );
 } );
 
+// ch番目の艦の制空値合計を出す
 function calculate_each(ch){
 	var mychara = $("tr." + ch);
 
@@ -579,6 +580,7 @@ function calculate_each(ch){
 }
 	
 
+// 表示されている各艦の制空値の総和を出す（全tr.sumを足すだけ）
 function calculate_all(){
 	var tmp = $("tr .sum");
 	var allsum = 0;
